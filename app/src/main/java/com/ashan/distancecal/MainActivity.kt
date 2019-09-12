@@ -28,8 +28,8 @@ class MainActivity : AppCompatActivity() {
 
     private fun calculate() {
         val convertedMilesInM: Double = miles.text.toString().ifEmpty { "0" }.toFloat() * 1609.34
-        val convertedInchInM: Double = inches.text.toString().toFloat() * 0.0254
-        val convertedFeetInM: Double = feet.text.toString().toFloat() * 0.3048
+        val convertedInchInM: Double = inches.text.toString().ifEmpty { "0" }.toFloat() * 0.0254
+        val convertedFeetInM: Double = feet.text.toString().ifEmpty { "0" }.toFloat() * 0.3048
         val totalInM: Double = convertedInchInM + convertedMilesInM + convertedFeetInM
 
         answer.text = ("$totalInM cm")
