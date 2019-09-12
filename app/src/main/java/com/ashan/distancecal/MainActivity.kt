@@ -9,6 +9,8 @@ import androidx.appcompat.app.AppCompatActivity
 class MainActivity : AppCompatActivity() {
 
     private val miles: EditText by lazy { findViewById<EditText>(R.id.miles) }
+    private val inches: EditText by lazy { findViewById<EditText>(R.id.inchs) }
+    private val feet: EditText by lazy { findViewById<EditText>(R.id.feet) }
     private val button: Button by lazy { findViewById<Button>(R.id.button) }
     private val answer: TextView  by lazy { findViewById<TextView>(R.id.answer) }
 
@@ -25,7 +27,11 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun calculate() {
-        val convertedMiles: Float = miles.text.toString().toFloat() / 10
-        answer.text = (convertedMiles.toString())
+        val convertedMilesInM: Double = miles.text.toString().ifEmpty { "0" }.toFloat() * 1609.34
+        val convertedInchInM: Double = inches.text.toString().toFloat() * 0.0254
+        val convertedFeetInM: Double = feet.text.toString().toFloat() * 0.3048
+        val totalInM: Double = convertedInchInM + convertedMilesInM + convertedFeetInM
+
+        answer.text = ("$totalInM cm")
     }
 }

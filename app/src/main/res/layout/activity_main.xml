@@ -22,7 +22,6 @@
                 app:layout_constraintTop_toTopOf="parent"/>
 
         <EditText android:id="@+id/miles" android:layout_width="match_parent"
-                  android:text="02"
                   android:layout_height="wrap_content"/>
     </LinearLayout>
 
@@ -41,6 +40,23 @@
         <EditText android:id="@+id/inchs" android:layout_width="match_parent"
                   android:layout_height="wrap_content"/>
     </LinearLayout>
+
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent"
+                  android:layout_height="wrap_content">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Feet"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+        <EditText android:id="@+id/feet" android:layout_width="match_parent"
+                  android:layout_height="wrap_content"/>
+    </LinearLayout>
+
 
     <TextView android:id="@+id/answer" android:layout_width="match_parent" android:layout_height="wrap_content"
               android:text="Answer is = "/>
