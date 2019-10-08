@@ -15,7 +15,7 @@
         <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Miles"
+                android:text="@string/miles"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
@@ -31,7 +31,7 @@
         <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Inch"
+                android:text="@string/inch"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
@@ -47,7 +47,7 @@
         <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Feet"
+                android:text="@string/feet"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
@@ -59,10 +59,10 @@
 
 
     <TextView android:id="@+id/answer" android:layout_width="match_parent" android:layout_height="wrap_content"
-              android:text="Answer is = "/>
+              android:text="@string/answer"/>
 
     <Button android:id="@+id/button" android:layout_width="wrap_content" android:layout_height="wrap_content"
-            android:text="Calculate"/>
+            android:text="@string/calculate"/>
 
 
 </LinearLayout>

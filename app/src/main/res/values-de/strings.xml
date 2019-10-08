@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">DistanceCal</string>
+    <string name="answer">Antworten</string>
+    <string name="calculate">Berechnung</string>
+    <string name="feet">Füße</string>
+    <string name="inch">Zoll</string>
+    <string name="miles">Meilen</string>
+</resources>
